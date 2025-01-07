@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "299862871612",
+    "project_id": "aaaa-fdbc8",
+    "storage_bucket": "aaaa-fdbc8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299862871612:android:1b9e87e741f38f642cbd39",
+        "android_client_info": {
+          "package_name": "com.example.tu_parking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjfY8g9Wj7_tJLDGPSu-t-ffYF1es9Avs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
