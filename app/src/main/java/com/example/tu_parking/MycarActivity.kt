@@ -2,15 +2,11 @@ package com.example.tu_parking
 
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.tu_parking.databinding.ActivityMycarBinding
-import com.example.tu_parking.databinding.ActivitySearchBinding
-
-
-
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 
 class MycarActivity : AppCompatActivity() {
@@ -46,5 +42,11 @@ class MycarActivity : AppCompatActivity() {
             binding.Mytime.text = "-"
             binding.Myprice.text = "-"
         }
+
+
+
     }
+
+
+
 }

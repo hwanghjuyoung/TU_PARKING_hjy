@@ -6,8 +6,19 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tu_parking.databinding.ActivitySearchBinding
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class SearchActivity : AppCompatActivity() {
+
+    private fun getTime(): String {
+        val now = System.currentTimeMillis()
+        val date = Date(now)
+        val dateFormat = SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.getDefault())
+        return dateFormat.format(date)
+    }
+
 
     private val TAG = "SearchActivity"
     private lateinit var binding: ActivitySearchBinding
@@ -53,5 +64,10 @@ class SearchActivity : AppCompatActivity() {
             val intent = Intent(this, SeatActivity::class.java)  // SeatActivity로 이동
             startActivity(intent)
         }
+        binding.timeschk.setOnClickListener {
+            binding.time.text = getTime()
+        }
+
     }
+
 }
